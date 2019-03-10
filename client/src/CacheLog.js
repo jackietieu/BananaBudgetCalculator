@@ -13,6 +13,7 @@ export default function CacheLog(props) {
             <td key={cache[i].key + 'startDate'}>{cache[i].startDate}</td>
             <td key={cache[i].key + 'numberOfDays'}>{cache[i].numberOfDays}</td>
             <td key={cache[i].key + 'totalCost'}>{cache[i].totalCost}</td>
+            <td key={cache[i].key + 'bananas'}>{cache[i].bananas}</td>
             <td key={cache[i].key + 'dateCreated'}>{dateCreated}</td>
           </tr>
         )
@@ -30,6 +31,7 @@ export default function CacheLog(props) {
               <th>Start Date</th>
               <th>Number of Days</th>
               <th>Total Cost</th>
+              <th>Bananas</th>
               <th>Calculated at</th>
             </tr>
           </thead>

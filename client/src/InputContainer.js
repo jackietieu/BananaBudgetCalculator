@@ -55,7 +55,13 @@ export default class InputContainer extends Component {
           }
 
           this.setState(state => ({
-          totalCost: `Budget required for ${data.bananas} banana${data.bananas !== 1 ? 's' : ''} over ${data.numberOfDays} day${data.numberOfDays > 1 ? 's' : ''} starting on ${data.startDate} is $${data.totalCost}`,
+          totalCost: (
+            <div>
+              <span>Budget required for {data.bananas} banana{data.bananas !== 1 ? 's' : ''} over {data.numberOfDays} day{data.numberOfDays > 1 ? 's' : ''}</span>
+              <br/>
+              <span>starting on {data.startDate} is <strong className="teal-text text-teal-lighten-5">${data.totalCost}</strong></span>
+            </div>
+          ),
           isLoading: false,
           cache: JSON.parse(localStorage.getItem('recentCalculations'))
         }))
