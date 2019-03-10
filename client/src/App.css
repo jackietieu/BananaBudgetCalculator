@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+.App {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+body {
+  background: lightblue;
+}
+
+.title {
+  font-size: 2.6em;
+}
+
+.title-container {
+  text-align: right;
+  font-size: 1.6em;
+  border-right: 1px solid black;
+  height: 320px;
+}
+
+.title-container > * {
+  margin-right: 20px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-container label {
+  margin: 0 80px;
+}
+
+.input-container label:first-of-type {
+  margin: 0 80px 0 160px;
+}
+
+.budget-calculator-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#date-picker {
+  text-align: center;
+  width: 12em;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  display: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  margin-right: 15px;
+}
+
+#budget-days {
+  width: 12em;
+  text-align: center;
+  position: relative;
+}
+
+#date-picker,
+#budget-days {
+  font-size: 1.5em;
+}
+
+.budget-days-error {
+  font-size: 1.6em;
+  background-color: rgb(236, 142, 142);
+  border: 1px solid red;
+  color: black;
+  padding: 0 10px;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button { 
+    opacity: 1;
+}
+
+button {
+  width: 10em;
+  margin: 20px auto;
+}
+
+.total-cost {
+  text-align: center;
+}
+
+.budget-calculator-form {
+  max-width: 1000px;
+  min-width: 850px;
+}
+
+label h3 {
+  color: black;
+}
+
+.total-cost-loading-display {
+  height: 48px;
+}
+
+.total-cost {
+  margin-top: 0;
+  font-size: 2em;
+}
+
+.calculated-cost {
+
+}
