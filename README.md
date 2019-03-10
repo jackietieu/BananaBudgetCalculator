@@ -9,6 +9,7 @@ npm install<br />
 npm start<br />
 
 Then run these commands in a separate terminal instance to run the React App:
+<br />
 cd client<br />
 npm install<br />
 npm start<br />
