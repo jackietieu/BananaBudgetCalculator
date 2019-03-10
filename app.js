@@ -12,6 +12,7 @@ app.get('/api/budgetCalculator', (req, res) => {
     let totalCost = 0;
     let duration = req.query.numberOfDays;
     let date = new Date(+req.query.startDate);
+    let bananas = 0;
 
     while (duration > 0) {
       let currentDay = date.getDay(); //0 or 6 is a weekend, 1-6 weekday
@@ -32,6 +33,7 @@ app.get('/api/budgetCalculator', (req, res) => {
           currentCost = 0.05;
         }
 
+        bananas++;
         totalCost += currentCost;
       }
       
@@ -42,6 +44,7 @@ app.get('/api/budgetCalculator', (req, res) => {
     let startDate = new Date(+req.query.startDate);
 
     res.status(200).json({
+      bananas,
       totalCost: totalCost.toFixed(2),
       startDate: `${startDate.getMonth() + 1}-${startDate.getDate()}-${startDate.getFullYear()}`,
       numberOfDays: req.query.numberOfDays

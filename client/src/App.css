@@ -21,7 +21,7 @@ body {
   text-align: right;
   font-size: 1.6em;
   border-right: 1px solid black;
-  height: 320px;
+  height: 340px;
 }
 
 .title-container > * {
@@ -105,14 +105,11 @@ label h3 {
 }
 
 .total-cost-loading-display {
-  height: 48px;
+  height: 60px;
+  margin-top: 15px;
 }
 
 .total-cost {
   margin-top: 0;
   font-size: 2em;
-}
-
-.calculated-cost {
-
 }

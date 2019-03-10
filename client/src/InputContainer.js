@@ -55,7 +55,7 @@ export default class InputContainer extends Component {
           }
 
           this.setState(state => ({
-          totalCost: `Budget required for ${data.numberOfDays} day${data.numberOfDays > 1 ? 's' : ''} starting on ${data.startDate} is $${data.totalCost}`,
+          totalCost: `Budget required for ${data.bananas} banana${data.bananas !== 1 ? 's' : ''} over ${data.numberOfDays} day${data.numberOfDays > 1 ? 's' : ''} starting on ${data.startDate} is $${data.totalCost}`,
           isLoading: false,
           cache: JSON.parse(localStorage.getItem('recentCalculations'))
         }))
